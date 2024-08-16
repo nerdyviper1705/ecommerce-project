@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Product Listing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ShopMate</h1>
+      <div class="cart">
+        <button id="cartButton">Cart <span id="cartCount">0</span></button>
+      </div>
+      <div id="menuToggle" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside id="sidebar" class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="#" data-category="all">All</a></li>
+          <li><a href="#" data-category="electronics">Electronics</a></li>
+          <li><a href="#" data-category="fashion">Fashion</a></li>
+          <li>
+            <a href="#" data-category="home-appliances">Home Appliances</a>
+          </li>
+          <li><a href="#" data-category="books">Books</a></li>
+          <li>
+            <a href="#" data-category="beauty-products">Beauty Products</a>
+          </li>
+          <li>
+            <a href="#" data-category="sports-equipment">Sports Equipment</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <div class="filter">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="default">Select</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+            <option value="name-desc">Name: Z to A</option>
+          </select>
+        </div>
+
+        <div class="products">
+          <div
+            class="product"
+            data-category="electronics"
+            data-price="20"
+            data-name="Wired Headphone"
+          >
+            <img src="./Images/HeadPhones - Electonics.png" alt="HeadPhones" />
+            <h3>Wired Headphone</h3>
+            <p>$20</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Wired Headphone"
+              data-product-price="20"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="fashion"
+            data-price="35"
+            data-name="Indian Saree"
+          >
+            <img
+              src="./Images/Saree - Fashion.png"
+              alt="A women wearing saree"
+            />
+            <h3>Indian Saree</h3>
+            <p>$35</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Indian Saree"
+              data-product-price="35"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="home-appliances"
+            data-price="15"
+            data-name="Fully Automatic Washing Machine"
+          >
+            <img
+              src="./Images/Washing Machine - Home Appliances.png"
+              alt="Washing Machine Image"
+            />
+            <h3>Fully Automatic Washing Machine</h3>
+            <p>$15</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Fully Automatic Washing Machine"
+              data-product-price="15"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="books"
+            data-price="50"
+            data-name="Romantic Book"
+          >
+            <img src="./Images/books - Romatic Book.png" alt="Romantic Book" />
+            <h3>Romantic Book</h3>
+            <p>$50</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Romantic Book"
+              data-product-price="50"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="beauty-products"
+            data-price="25"
+            data-name="Makeup Kit"
+          >
+            <img
+              src="./Images/Makeup Kit - Beauty - product.png"
+              alt="Make-up Kit"
+            />
+            <h3>Makeup Kit</h3>
+            <p>$25</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Makeup Kit"
+              data-product-price="25"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="sports-equipment"
+            data-price="40"
+            data-name="Cricket Kit"
+          >
+            <img src="./Images/Cricket Kit - Sports.png" alt="Cricket Kit" />
+            <h3>Cricket Kit</h3>
+            <p>$40</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Cricket Kit"
+              data-product-price="40"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="electronics"
+            data-price="60"
+            data-name="Bluetooth Speakers"
+          >
+            <img
+              src="./Images/Bluetooth speakers - Electronics.png"
+              alt="Bluetooth Speakers"
+            />
+            <h3>Bluetooth Speakers</h3>
+            <p>$60</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Bluetooth Speakers"
+              data-product-price="60"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="fashion"
+            data-price="30"
+            data-name="Men T-shirt"
+          >
+            <img src="./Images/Men T-shirt - Fashion.png" alt="Men T-shirt" />
+            <h3>Men T-shirt</h3>
+            <p>$30</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Men T-shirt"
+              data-product-price="30"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="beauty-products"
+            data-price="45"
+            data-name="Sun Screen Lotion"
+          >
+            <img
+              src="./Images/Beauty Products - Lotion.png"
+              alt="Sun Screen Lotion"
+            />
+            <h3>Sun Screen Lotion</h3>
+            <p>$45</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Sun Screen Lotion"
+              data-product-price="45"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="product"
+            data-category="books"
+            data-price="55"
+            data-name="Thriller Book"
+          >
+            <img
+              src="./Images/Unwired Uprising - Books.png"
+              alt="Thriller Book"
+            />
+            <h3>Thriller Book</h3>
+            <p>$55</p>
+            <button
+              class="add-to-cart"
+              data-product-name="Thriller Book"
+              data-product-price="55"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="common.js"></script>
+  </body>
+</html>
